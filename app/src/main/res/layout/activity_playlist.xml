@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Toolbar android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/playlist_toolbar">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/playlist_back_img"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/leftarrow"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Music-A"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="15dp"
+                    />
+            </LinearLayout>/
+        </Toolbar>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/playlist_picture_img"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlist_title_tv"
+            android:text="Nombre de la lista"
+            android:textSize="30sp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlist_description_tv"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:text="Descripcion"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playlist_num_tracks_tv"
+                android:text="20 cansiones"
+                android:paddingLeft="10dp"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playlist_num_fans_tv"
+                android:text="150 fans"
+                android:paddingLeft="20dp"
+                android:textSize="17sp"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:id="@+id/playlist_tracks_lv">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="#CEE3F6">
+            <EditText
+                android:layout_width="200dp"
+                android:paddingLeft="10dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:hint="Busca una lista de reproduccion"
+                android:background="#fff"
+                android:id="@+id/mainactivity_search_et"/>
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/search"
+                android:id="@+id/mainactivity_search_btn" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainactivity_playlist_lv">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
